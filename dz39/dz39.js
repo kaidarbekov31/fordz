@@ -5,7 +5,14 @@
 
 // let user = prompt('Enter next');
 // console.log(user);
-// console.log(user.replaceAll(' ', ''));
+
+// function user2(user) {
+//     return user.replaceAll(' ', '')
+// }
+// let result = user2(user)
+// console.log(result);
+
+
 
 
 
@@ -14,24 +21,31 @@
 
 
 // let arr = [1, 2, 3, 4, 5, 6];
-// console.log(arr.slice(-1));
+// function newArr(array) {
+//     if (array.length === 0) {
+//         return undefined
+//     } else {
+//         return array[array.length - 1];
+//     }
+// }
+//     let lastArr = newArr(arr);
+//     console.log(lastArr);
 
 
 // Задание 3
 // Напишите функцию, которая принимает два массива, соединяет их и возвращает
 
 
-// let arr = [1, 2, 3, 4, 5, 6];
-// let arr2 = ['xedw', NaN, undefined]
+let arr = [1, 2, 3, 4, 5, 6];
+let arr2 = ['xedw', NaN, undefined]
+console.log(arr, arr2);
 
+function sumArr(arr,arr2) {
+    return arr.concat(arr2)
+}
+let sum = sumArr(arr,arr2)
+console.log(sum);
 
-// console.log(arr);
-// console.log(arr2);
-
-
-// let arr3 = arr.concat(arr2);
-
-// console.log(arr3);
 
 
 
@@ -39,14 +53,14 @@
 // Напишите функцию, которая принимает в себя строку и делает первую букву заглавной
 // Например: 'привет' --> 'Привет'
 
-const word = prompt('привет');
+// const word = prompt('привет');
 
-function capitalizeFirstLetter(str) {
+// function capitalizeFirstLetter(str) {
 
-    if (str.length === 0) return str;
+//     if (str.length === 0) return str;
 
-    return str.charAt(0).toUpperCase() + str.slice(1);
-}
+//     return str.charAt(0).toUpperCase() + str.slice(1);
+// }
 
-const capitalizedString = capitalizeFirstLetter(word);
-console.log(capitalizedString);
+// const capitalizedString = capitalizeFirstLetter(word);
+// console.log(capitalizedString);
